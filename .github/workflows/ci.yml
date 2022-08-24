@@ -36,4 +36,4 @@ jobs:
           pip install -r requeriments.txt
           pip install pytest
       - name: Testeo
-        run: pytest -vv
+        run: pytest -vv test.py
