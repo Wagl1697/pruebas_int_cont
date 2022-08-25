@@ -2,6 +2,9 @@
 
 name: CI
 
+env: 
+  nombre_archivo: test.py
+
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
@@ -36,4 +39,4 @@ jobs:
           pip install -r requeriments.txt
           pip install pytest
       - name: Testeo
-        run: pytest -vv test.py
+        run: pytest -vv $nombre_archivo
