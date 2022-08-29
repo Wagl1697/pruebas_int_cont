@@ -7,4 +7,4 @@ def test1():
 def test2():
 	assert calculadora.restar() == 3
 def test3():
-	assert calculadora.dividir() == 4
+	assert calculadora.multiplicar() == 4
