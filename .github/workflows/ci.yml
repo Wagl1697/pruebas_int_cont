@@ -36,5 +36,6 @@ jobs:
           pip install -r requeriments.txt
           pip install pytest
       - name: Testeo
-        run: pytest -vv test.py
-        run: pytest -vv testeo_calculadora.py
+        run: |
+        pytest -vv test.py
+        pytest -vv testeo_calculadora.py
